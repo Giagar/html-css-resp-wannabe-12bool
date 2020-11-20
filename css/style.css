@@ -1,5 +1,23 @@
-.container {
+.container-wrapper {
   margin-top: 100px;
+  min-width: 190px;
+}
+
+[class*="col-"] {
+  padding: 0 20px 30px;
+}
+
+h1 {
+  padding: 10px 0 40px;
+}
+
+h3 {
+  padding: 15px 0;
+}
+
+hr {
+  width: 80%;
+  margin: 15px auto 0;
 }
 
 /* BLOCCO LEZIONI */
@@ -23,11 +41,11 @@
   text-align: center;
 }
 
-#why .container>.first,
+/* #why .container>.first, */
 #why .container>.second,
 #why .container>.third {
-  width: 100%;
-  margin-top: 80px;
+  /* width: 100%; */
+  margin-top: 60px;
 }
 
 #why .container img {
@@ -53,4 +71,26 @@ img {
 
 .clear {
   clear: both;
+}
+
+
+/* ----MEDIA QUERY */
+@media screen and (max-width: 991px) {
+  .container-wrapper {
+    margin-top: 40px;
+  }
+
+  img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-wrapper {
+    margin-top: 20px;
+  }
+
+  img {
+    height: 100px;
+  }
 }
